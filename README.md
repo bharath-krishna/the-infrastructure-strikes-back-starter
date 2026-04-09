@@ -24,6 +24,27 @@ clean, unmodified copy of this starter that judges and participants
 can hit to see the intended "before" behavior. Your fork's deployment
 will live at a different URL (see `docs/DEPLOY.md`).
 
+## Round 3: Adversarial Agent Experiment
+
+This is a **two-phase event**, and the attackers are **Red Team
+developers driving autonomous agents**. Humans pick targets and
+strategy; agents execute volume.
+
+- **Phase 1 — passive hardening (start → 7:00 PM PDT):** fork, harden
+  your assigned surface against the seeded flaws, deploy, submit
+  Form #1. No attacks yet. No fight-back yet.
+- **Phase 2 — active defense (7:00 PM → 8:00 PM PDT):** Red agents
+  release against your deployment. You may now fight back within a
+  bounded scope: rate limits, IP blocks, tarpits, honeypots, deception
+  against classified adversarial traffic, extra telemetry. The
+  happy-path probe must still pass — an overeager defense that locks
+  legitimate users out is a hard zero. Submit Form #2 at 8:00 PM.
+- **No commits after 8:00 PM PDT.**
+
+See `docs/EVENT_RULES.md` for the full list of what's allowed and
+forbidden in Phase 2, and `docs/SCORING.md` for the six-category
+rubric.
+
 ## What this is **not**
 
 - Not a framework
