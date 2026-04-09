@@ -10,6 +10,7 @@ import { resolve, join } from "node:path";
 const root = resolve(new URL("../../", import.meta.url).pathname);
 
 const REQUIRED_FILES = [
+  "LICENSE",
   "package.json",
   "tsconfig.json",
   "next.config.mjs",

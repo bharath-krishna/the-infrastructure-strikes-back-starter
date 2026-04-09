@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "Synthetic, naive, intentionally under-defended web app for a live adversarial engineering event. NOT production.",
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -99,3 +99,9 @@ See `docs/ARCHITECTURE.md`.
 
 Submit your deployment URL via the event submission form before the
 deadline in `docs/EVENT_RULES.md`. **Late submissions are not scored.**
+
+## License
+
+This software is distributed under an Event Use Only License — see
+[`LICENSE`](./LICENSE). Not open source. Redistribution prohibited
+outside the April 9, 2026 event.
