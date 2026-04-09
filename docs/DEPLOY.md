@@ -1,5 +1,23 @@
 # deploy
 
+## Reference deployment
+
+The organizers run a canonical, unmodified copy of this starter at:
+
+**https://attack.day-zero.dev**
+
+That deployment tracks `main` on this repo, has all nine seeded flaws
+in place, and is the "before" baseline for the event. Use it to:
+
+- confirm you understand what the starter does before you fork
+- sanity-check probe requests against a known-good (known-bad?) copy
+- compare behavior if your own deployment acts differently from expected
+
+Your fork will live at a different URL — likely
+`https://<your-fork-slug>.vercel.app` or whatever you configure.
+**Do not attack `attack.day-zero.dev` as part of scoring** — judges
+score each team's own deployment.
+
 ## Local
 
 ```bash
@@ -37,10 +55,14 @@ smoke checks — it does **not** boot a server. Use it in CI.
 
 5. Click **Deploy**. First deploy should finish in under two minutes.
 6. Open the deployed URL. Confirm the landing page shows your
-   `TENANT_ID`.
+   `TENANT_ID` (not a random `tenant_<hex>` value, not the reference
+   deploy's `infra-strikes-back`).
 7. Submit the deployment URL via the event submission form.
 
-Target: from fork to submitted URL in under 20 minutes.
+Target: from fork to submitted URL in under 20 minutes. If you get
+stuck, compare your deploy against the reference at
+https://attack.day-zero.dev — everything except the `TENANT_ID` on
+the landing page should match on an unhardened fork.
 
 ## Env var notes
 

@@ -19,6 +19,11 @@ A small, naive web app with three hardening surfaces:
 Blue teams fork this repo, pick one area, harden it, and deploy. Judges
 score by reading logs from the admin dashboard on each deployment.
 
+**Canonical reference deployment:** https://attack.day-zero.dev — a
+clean, unmodified copy of this starter that judges and participants
+can hit to see the intended "before" behavior. Your fork's deployment
+will live at a different URL (see `docs/DEPLOY.md`).
+
 ## What this is **not**
 
 - Not a framework
@@ -86,6 +91,10 @@ organizers.
 See `docs/DEPLOY.md`. Short version: push your fork, click deploy on
 Vercel, set `TENANT_ID`, `ADMIN_TOKEN`, and `SESSION_SECRET`, submit
 your deployment URL. Should take well under 20 minutes.
+
+The canonical reference deploy at https://attack.day-zero.dev runs
+the exact code on `main` with all seeded flaws in place — useful for
+reproducing a baseline before you start hardening.
 
 ## Scoring
 
