@@ -30,8 +30,8 @@ export async function POST(req: Request) {
     logEvent({ req, route, status: 400, actor: null });
     return NextResponse.json({ error: "bad json" }, { status: 400 });
   }
-  const username = (body.username || "").trim();
-  const password = body.password || "";
+  const username = String(body.username ?? "").trim();
+  const password = String(body.password ?? "");
   if (!username || !password) {
     logEvent({ req, route, status: 400, actor: null });
     return NextResponse.json(
